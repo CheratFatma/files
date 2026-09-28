@@ -1,0 +1,48 @@
+(0 8-17/4 * * 1-5)
+
+CHAQUE JOUR DE 
+
+
+(MIN H J31 M J)
+
+Telecharger 2 collection 
+
+collection1.json
+collection2.json
+
+Jenkins parametre 
+si je coche param & donc je lance collection1
+si je coche param 2 donc je lance collection2
+si les deux ne sont pas cocher je lance les deux 
+
+
+si c'est oui
+cas passsent  : url et titre a verifier 
+
+
+Faut installer avant de lancer le pipeline 
+npm install allure-playwright 
+npm install allure-commandline
+
+
+
+INNER JOIN
+SELECT * FROM user u INNER JOIN commande c on u.id = c.id_user;
+
+
+
+SELECT c.id_client,COUNT(c.id_contrat) AS nombre_contrats,SUM(c.montant_prime) AS total_primes
+FROM Contrat
+GROUP BY cl.id_client
+HAVING COUNT(c.id_contrat) > 2;
+
+
+
+(
+select c.id_client ,count(montant_prime) as somme from contrat c 
+group by c.id_client
+select c.id_client, count(*) as nbr_sinistre,somme from contrat c 
+group by c.id_client
+HAVING nbr_sinistre >2
+
+;

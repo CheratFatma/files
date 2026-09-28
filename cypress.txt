@@ -1,0 +1,31 @@
+COMMANDES CYPRESS
+créer un dossier cypress_cypress
+npm init -y
+npm install cypress@14 --save-dev
+npx cypress --version
+npm install --save-dev @cypress/grep@5.0.0 (pour utiliser les tags)
+npx cypress run --env grepTags=@smoke (pour lancer avec les tags)
+npx cypress run --spec "cypress/e2e/loginenv.cy.js" --env var=recette (pour exécuter avec environnement et viser un seul test)
+npm install csvtojson --save-dev (installer la bibliotheque csvtojson pour les jeux de donnees)
+npm install mochawesome mochawesome-merge mochawesome-report-generator --save-dev (pour utiliser mockawesome)
+npx cypress run 
+npm run report:merge
+npm run report:generate
+npm install --save-dev @shelex/cypress-allure-plugin allure-commandline (pour utiliser Allure)
+npx cypress run 
+npx allure generate allure-results --clean -o allure-report 
+npx allure open allure-report 
+npm install --save-dev cypress cucumber cypress-cucumber-preprocessor 
+npx cypress open
+
+
+npm install --save-dev @faker-js/faker
+
+
+
+npx cypress run --env grepTags=@glowria
+
+
+
+
+
